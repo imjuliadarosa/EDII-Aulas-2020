@@ -24,9 +24,9 @@ public class binariaAVL {
         int alturaE = 0;
         alturaD = contarAltura(raiz.getDireita());
         alturaE = contarAltura(raiz.getEsquerda());
-        if((alturaD-alturaE)==-2){
+        if((alturaD-alturaE)>=2){
             return false;
-        }else if((alturaE-alturaD)==-2){
+        }else if((alturaE-alturaD)>=2){
             return false;
         }else{
             return true;
